@@ -9,7 +9,7 @@ while True:
     if user_action.startswith('add'):
         todo = user_action[4:]
 
-        todo = input("Enter a todo: ") + "\n"
+        #todo = input("Enter a todo: ") + "\n"
 
         # Opens, Reads and Closes 'todos.txt' file
         with open('todos.txt', 'r') as file:
@@ -42,7 +42,7 @@ while True:
         number = int(input("Number of the todo to edit "))
         number = number - 1
         new_todo = input("Enter new todo:  ")
-        todos[number] = new_todo
+        #todos[number] = new_todo
 
      elif user_action.startswith('complete'):
         number = int(input("Number of the todo to complete:: "))
